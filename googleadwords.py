@@ -42,3 +42,12 @@ keywords_df['Campaign'] = 'SEM_Sofas'
 
 # Add a criterion type column
 keywords_df['Criterion Type'] = 'Exact'
+
+# Make a copy of the keywords DataFrame
+keywords_phrase = keywords_df.copy()
+
+# Change criterion type match to phrase
+keywords_phrase['Criterion Type'] = 'Phrase'
+
+# Append the DataFrames
+keywords_df_final = keywords_df.append(keywords_phrase)
