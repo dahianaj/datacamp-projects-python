@@ -8,7 +8,7 @@ Generating Keywords for Google Adwords
 import pandas as pd
 
 # List of words to pair with products
-words = ['buy','price','cost','promo','sale','discount']
+words = ['buy','price','shop','promo','budget','discount']
 
 # Combine the words with the product names
 products = ['sofas', 'convertible sofas', 'love seats', 'recliners', 'sofa beds']
