@@ -51,3 +51,10 @@ keywords_phrase['Criterion Type'] = 'Phrase'
 
 # Append the DataFrames
 keywords_df_final = keywords_df.append(keywords_phrase)
+
+# Save the final keywords to a CSV file
+keywords_df_final.to_csv('keywords.csv', index=False)
+
+# View a summary of our campaign work
+summary = keywords_df_final.groupby(['Ad Group', 'Criterion Type'])['Keyword'].count()
+print(summary)
